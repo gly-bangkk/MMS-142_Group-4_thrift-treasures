@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Thrift Treasures</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/custom.css" />
+	</head>
+	<body class="bg-lightbrown text-darkbrown">
+		<header class="bg-lightbrown py-3 px-4">
+			<div class="container d-flex align-items-center justify-content-between">
+				<button class="btn p-0 border-0" type="button" aria-label="Open menu">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 640 640"
+						width="28"
+						height="28"
+					>
+						<path
+							fill="#615341"
+							d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+						/>
+					</svg>
+				</button>
+
+				<a
+					href="#"
+					class="text-decoration-none text-darkbrown font-serif fs-3 lh-1 text-center"
+				>
+					<img
+						src="/images/logo.png"
+						alt="Thrift Treasures Logo"
+						style="width: 100px; height: auto"
+					/>
+				</a>
+
+				<a href="#" aria-label="Shopping cart">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 640 640"
+						width="28"
+						height="28"
+					>
+						<path
+							fill="#615341"
+							d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"
+						/>
+					</svg>
+				</a>
+			</div>
+		</header>
+
+		<nav class="bg-darkbrown py-2">
+			<div
+				class="container d-flex flex-wrap justify-content-center gap-4 gap-md-5 small"
+			>
+				<a href="#products" class="text-decoration-none text-lightbrown"
+					>Products</a
+				>
+				<a href="#about" class="text-decoration-none text-lightbrown"
+					>About Us</a
+				>
+				<a href="#footer" class="text-decoration-none text-lightbrown"
+					>Contact</a
+				>
+				<a href="#footer" class="text-decoration-none text-lightbrown"
+					>Privacy &amp; Terms</a
+				>
+			</div>
+		</nav>
+
+		<section
+			class="hero-section position-relative d-flex align-items-center justify-content-center text-center text-white"
+		>
+			<img
+				src="/images/banner-1.png"
+				alt="Chapter 1: Average Star"
+				class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+			/>
+			<div
+				class="hero-overlay position-absolute top-0 start-0 w-100 h-100"
+			></div>
+
+			<div class="position-relative z-1 px-3 py-5" style="max-width: 680px">
+				<p
+					class="text-uppercase small mb-2"
+					style="letter-spacing: 0.12em; font-size: 0.75rem"
+				>
+					Chapter 1: Average Star
+				</p>
+				<h1 class="font-serif display-5 fw-normal lh-sm mb-3">
+					Every piece has a past.<br />
+					Every piece deserves a future.
+				</h1>
+				<p class="small mb-4 mx-auto opacity-90" style="max-width: 460px">
+					A debut collection where pre-loved pieces find new life and begin
+					their journey to shine like stars in the making.
+				</p>
+				<a
+					href="#products"
+					class="btn btn-blue text-white px-4 py-2 rounded-3 small"
+				>
+					Shop Here
+				</a>
+			</div>
+		</section>
+
+		<section id="products" class="py-5">
+			<div class="container py-3" style="max-width: 960px">
+				<div class="d-flex justify-content-between align-items-end mb-4">
+					<div>
+						<h2 class="font-serif mb-0 text-darkbrown">Products</h2>
+						<span
+							class="text-uppercase text-darkbrown opacity-75"
+							style="font-size: 0.7rem; letter-spacing: 0.08em"
+						>
+							Most Purchased
+						</span>
+					</div>
+					<a
+						href="#"
+						class="text-decoration-none text-darkbrown small fw-medium"
+						>View All</a
+					>
+				</div>
+
+				<div class="row g-4 g-md-5">
+					<div class="col-12 col-sm-6 col-md-4">
+						<div class="d-flex flex-column h-100">
+							<div
+								class="bg-white border border-darkbrown ratio ratio-1x1 mb-3 overflow-hidden"
+							>
+								<img
+									src="/images/dont-be-late-tee.png"
+									alt="Don't Be Late Tee"
+									class="object-fit-cover p-2"
+								/>
+							</div>
+							<h3 class="font-serif fs-5 mb-0 text-darkbrown">
+								Don't Be Late Tee
+							</h3>
+							<span class="text-darkbrown opacity-75 small mb-2">Category</span>
+							<span class="fw-semibold text-darkbrown mb-3">&#8369; 299</span>
+							<a
+								href="#"
+								class="btn btn-blue btn-sm text-white text-uppercase rounded-pill py-1 mt-auto"
+								style="letter-spacing: 0.08em; font-size: 0.75rem"
+							>
+								View
+							</a>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4">
+						<div class="d-flex flex-column h-100">
+							<div
+								class="bg-white border border-darkbrown ratio ratio-1x1 mb-3 overflow-hidden"
+							>
+								<img
+									src="/images/do-good-work-tee.png"
+									alt="Do Good Work Tee"
+									class="object-fit-cover p-2"
+								/>
+							</div>
+							<h3 class="font-serif fs-5 mb-0 text-darkbrown">
+								Do Good Work Tee
+							</h3>
+							<span class="text-darkbrown opacity-75 small mb-2">Category</span>
+							<span class="fw-semibold text-darkbrown mb-3">&#8369; 299</span>
+							<a
+								href="#"
+								class="btn btn-blue btn-sm text-white text-uppercase rounded-pill py-1 mt-auto"
+								style="letter-spacing: 0.08em; font-size: 0.75rem"
+							>
+								View
+							</a>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4">
+						<div class="d-flex flex-column h-100">
+							<div
+								class="bg-white border border-darkbrown ratio ratio-1x1 mb-3 overflow-hidden"
+							>
+								<img
+									src="/images/everyday-comfort-tee.png"
+									alt="Everyday Comfort Tee"
+									class="object-fit-cover p-2"
+								/>
+							</div>
+							<h3 class="font-serif fs-5 mb-0 text-darkbrown">
+								Everyday Comfort Tee
+							</h3>
+							<span class="text-darkbrown opacity-75 small mb-2">Category</span>
+							<span class="fw-semibold text-darkbrown mb-3">&#8369; 299</span>
+							<a
+								href="#"
+								class="btn btn-blue btn-sm text-white text-uppercase rounded-pill py-1 mt-auto"
+								style="letter-spacing: 0.08em; font-size: 0.75rem"
+							>
+								View
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="mb-5">
+			<div class="container-fluid px-0">
+				<div class="row g-0 align-items-stretch">
+					<div class="col-12 col-md-5">
+						<img
+							src="/images/banner-2.png"
+							alt="Curated thrifted garments on a rack"
+							class="w-100 h-100 object-fit-cover"
+							style="min-height: 320px"
+						/>
+					</div>
+
+					<div
+						class="col-12 col-md-7 bg-lightblue d-flex flex-column justify-content-center p-4 p-md-5"
+					>
+						<div class="mx-auto mx-md-0" style="max-width: 480px">
+							<p
+								class="text-uppercase small text-darkbrown mb-2"
+								style="letter-spacing: 0.1em; font-size: 0.75rem"
+							>
+								About Thrift Treasures
+							</p>
+							<h2 class="font-serif display-6 lh-sm text-darkbrown mb-3">
+								Giving a second life to pieces who were once loved.
+							</h2>
+							<p class="small text-darkbrown lh-base mb-4">
+								We are a clothing brand that celebrates creative reworking,
+								unique finds, and personal style. From carefully curated
+								thrifted garments to reimagined pieces, we want to make fashion
+								more individual, accessible, and mindful of the world around us.
+							</p>
+							<a
+								href="#"
+								class="text-decoration-none text-darkbrown fw-semibold small"
+							>
+								Read More
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer" class="bg-darkbrown text-lightbrown py-5">
+			<div class="container" style="max-width: 960px">
+				<div class="row g-4">
+					<div class="col-12 col-md-6 d-flex gap-3 align-items-start">
+						<img
+							src="/images/logo-footer.png"
+							alt="Thrift Treasures Logo"
+							class="flex-shrink-0"
+							style="width: 150px; height: 150px"
+						/>
+						<div style="max-width: 300px">
+							<p
+								class="text-uppercase fw-semibold small mb-1 text-white"
+								style="letter-spacing: 0.08em; font-size: 0.75rem"
+							>
+								Thrift Treasures
+							</p>
+							<p class="small mb-0 opacity-75">
+								Notes on new collections, material studies, and the objects that
+								inform our work.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-3">
+						<p
+							class="text-uppercase fw-semibold small mb-2 text-white"
+							style="letter-spacing: 0.08em; font-size: 0.75rem"
+						>
+							Information
+						</p>
+						<ul class="list-unstyled small mb-0">
+							<li class="mb-1">
+								<a
+									href="#products"
+									class="text-decoration-none text-lightbrown opacity-75"
+									>Products</a
+								>
+							</li>
+							<li>
+								<a
+									href="#about"
+									class="text-decoration-none text-lightbrown opacity-75"
+									>About Us</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-md-3">
+						<p
+							class="text-uppercase fw-semibold small mb-2 text-white"
+							style="letter-spacing: 0.08em; font-size: 0.75rem"
+						>
+							Support
+						</p>
+						<ul class="list-unstyled small mb-0">
+							<li class="mb-1">
+								<a
+									href="#"
+									class="text-decoration-none text-lightbrown opacity-75"
+									>Contact Us</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-decoration-none text-lightbrown opacity-75"
+									>Privacy and Terms</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
