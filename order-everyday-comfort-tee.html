@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Order Form - Everyday Comfort Tee | Thrift Treasures</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+		<style>
+			.color-swatch {
+				transition:
+					transform 0.15s ease,
+					box-shadow 0.15s ease;
+			}
+			.btn-check:checked + .color-swatch {
+				box-shadow:
+					0 0 0 2px #efe9dd,
+					0 0 0 4px #615341;
+				transform: scale(1.1);
+			}
+		</style>
+	</head>
+	<body class="order-page-bg text-darkbrown">
+		<header class="bg-lightbrown py-3 px-4">
+			<div class="container d-flex align-items-center justify-content-between">
+				<button class="btn p-0 border-0" type="button" aria-label="Open menu">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 640 640"
+						width="28"
+						height="28"
+					>
+						<path
+							fill="#615341"
+							d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+						/>
+					</svg>
+				</button>
+
+				<a
+					href="index.html"
+					class="text-decoration-none text-darkbrown font-serif fs-3 lh-1 text-center"
+				>
+					<img
+						src="images/logo.png"
+						alt="Thrift Treasures Logo"
+						style="width: 100px; height: auto"
+					/>
+				</a>
+
+				<a href="#" aria-label="Shopping cart">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 640 640"
+						width="28"
+						height="28"
+					>
+						<path
+							fill="#615341"
+							d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"
+						/>
+					</svg>
+				</a>
+			</div>
+		</header>
+
+		<nav class="bg-darkbrown py-2">
+			<div
+				class="container d-flex flex-wrap justify-content-center gap-4 gap-md-5 small"
+			>
+				<a
+					href="index.html#products"
+					class="text-decoration-none text-lightbrown"
+					>Products</a
+				>
+				<a href="index.html#about" class="text-decoration-none text-lightbrown"
+					>About Us</a
+				>
+				<a href="#footer" class="text-decoration-none text-lightbrown"
+					>Contact</a
+				>
+				<a href="#footer" class="text-decoration-none text-lightbrown"
+					>Privacy &amp; Terms</a
+				>
+			</div>
+		</nav>
+
+		<main class="py-5">
+			<div class="container" style="max-width: 980px">
+				<div class="text-center mb-4">
+					<h1
+						class="font-serif display-4 fw-bold text-darkbrown d-inline-flex align-items-center gap-2 mb-3"
+					>
+						Order Form
+						<span class="text-blue fs-2 lh-1">&#10022;</span>
+					</h1>
+					<hr
+						class="mx-auto border-brown opacity-50 mt-0"
+						style="max-width: 460px"
+					/>
+				</div>
+
+				<form
+					id="orderForm"
+					data-product="Everyday Comfort Tee"
+					data-collection="Average Star"
+					data-price="299"
+					data-shipping="80"
+				>
+					<div class="row g-4 g-lg-5 align-items-start">
+						<div class="col-12 col-lg-6">
+							<div
+								class="order-card rounded-4 border border-brown overflow-hidden"
+							>
+								<div class="p-4">
+									<div class="row g-3 align-items-center">
+										<div class="col-12 col-sm-6">
+											<div
+												class="bg-lightbrown bg-opacity-50 rounded-3 overflow-hidden ratio ratio-1x1"
+											>
+												<img
+													src="images/everyday-comfort-tee.png"
+													alt="Everyday Comfort Tee"
+													class="object-fit-cover p-2"
+												/>
+											</div>
+										</div>
+
+										<div class="col-12 col-sm-6">
+											<h2 class="font-serif fs-4 fw-bold text-darkbrown mb-0">
+												Everyday Comfort Tee
+											</h2>
+											<p
+												class="font-serif fst-italic text-darkbrown opacity-75 mb-2"
+											>
+												Average Star
+											</p>
+											<p class="fs-4 fw-bold text-darkbrown mb-3">
+												&#8369; 299
+											</p>
+
+											<div class="mb-3">
+												<span
+													class="d-block small fw-semibold text-darkbrown mb-2"
+												>
+													Color:
+													<span id="selectedColorLabel" class="fw-normal"
+														>Select a Color</span
+													>
+												</span>
+												<div class="d-flex gap-2">
+													<input
+														type="radio"
+														class="btn-check"
+														name="color"
+														id="colorTan"
+														value="Warm Tan"
+														required
+													/>
+													<label
+														class="color-swatch rounded-circle d-inline-block"
+														for="colorTan"
+														style="
+															width: 32px;
+															height: 32px;
+															background-color: #a98a6c;
+															cursor: pointer;
+														"
+														title="Warm Tan"
+													></label>
+
+													<input
+														type="radio"
+														class="btn-check"
+														name="color"
+														id="colorBlue"
+														value="Slate Blue"
+													/>
+													<label
+														class="color-swatch rounded-circle d-inline-block"
+														for="colorBlue"
+														style="
+															width: 32px;
+															height: 32px;
+															background-color: #7f94a8;
+															cursor: pointer;
+														"
+														title="Slate Blue"
+													></label>
+
+													<input
+														type="radio"
+														class="btn-check"
+														name="color"
+														id="colorCharcoal"
+														value="Charcoal"
+													/>
+													<label
+														class="color-swatch rounded-circle d-inline-block"
+														for="colorCharcoal"
+														style="
+															width: 32px;
+															height: 32px;
+															background-color: #4a4d50;
+															cursor: pointer;
+														"
+														title="Charcoal"
+													></label>
+												</div>
+											</div>
+
+											<div>
+												<span
+													class="d-block small fw-semibold text-darkbrown mb-2"
+												>
+													Size:
+													<span id="selectedSizeLabel" class="fw-normal"
+														>Select a Size</span
+													>
+												</span>
+												<div class="d-flex flex-wrap gap-2">
+													<label class="order-size-option">
+														<input
+															type="radio"
+															name="size"
+															value="XS"
+															required
+														/>
+														<span class="order-size-pill">XS</span>
+													</label>
+													<label class="order-size-option">
+														<input type="radio" name="size" value="S" />
+														<span class="order-size-pill">S</span>
+													</label>
+													<label class="order-size-option">
+														<input type="radio" name="size" value="M" />
+														<span class="order-size-pill">M</span>
+													</label>
+													<label class="order-size-option">
+														<input type="radio" name="size" value="L" />
+														<span class="order-size-pill">L</span>
+													</label>
+													<label class="order-size-option">
+														<input type="radio" name="size" value="XL" />
+														<span class="order-size-pill">XL</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<hr class="border-brown opacity-50 my-4" />
+
+									<div
+										class="d-flex justify-content-between small text-darkbrown mb-2"
+									>
+										<span>Subtotal</span>
+										<span class="fw-medium">&#8369;299</span>
+									</div>
+									<div
+										class="d-flex justify-content-between small text-darkbrown"
+									>
+										<span>Shipping Fee</span>
+										<span class="fw-medium">&#8369;80</span>
+									</div>
+								</div>
+
+								<div
+									class="order-total-bar d-flex justify-content-between align-items-center px-4 py-3"
+								>
+									<span class="font-serif fs-3 fw-bold text-darkbrown"
+										>Total</span
+									>
+									<span class="fs-3 fw-bold text-darkbrown">&#8369;379</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-6">
+							<div class="mb-4">
+								<span
+									class="order-pill-header d-inline-block font-serif fs-5 fw-semibold text-darkbrown bg-lightblue px-4 py-1 rounded-pill mb-3"
+								>
+									Shipping Information
+								</span>
+
+								<div class="d-flex flex-column gap-3">
+									<input
+										type="text"
+										id="fullName"
+										class="form-control order-input rounded-3 py-2 px-3"
+										placeholder="Full Name"
+										required
+									/>
+									<input
+										type="email"
+										id="emailAddress"
+										class="form-control order-input rounded-3 py-2 px-3"
+										placeholder="Email Address"
+										required
+									/>
+									<input
+										type="tel"
+										id="phoneNumber"
+										class="form-control order-input rounded-3 py-2 px-3"
+										placeholder="Phone Number"
+										required
+									/>
+									<input
+										type="text"
+										id="deliveryAddress"
+										class="form-control order-input rounded-3 py-2 px-3"
+										placeholder="Delivery Address"
+										required
+									/>
+								</div>
+							</div>
+
+							<div>
+								<span
+									class="order-pill-header d-inline-block font-serif fs-5 fw-semibold text-darkbrown bg-lightblue px-4 py-1 rounded-pill mb-3"
+								>
+									Payment Method
+								</span>
+
+								<div class="d-flex flex-column gap-3 ps-1">
+									<label class="d-flex align-items-center gap-3 cursor-pointer">
+										<input
+											type="radio"
+											name="payment"
+											value="Cash on Delivery"
+											class="form-check-input order-radio m-0"
+											required
+										/>
+										<span
+											class="d-inline-flex align-items-center justify-content-center"
+											style="width: 28px"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												fill="#615341"
+												viewBox="0 0 16 16"
+											>
+												<path
+													d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
+												/>
+												<path
+													d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"
+												/>
+											</svg>
+										</span>
+										<span class="font-serif fs-5 text-darkbrown"
+											>Cash on Delivery</span
+										>
+									</label>
+
+									<label class="d-flex align-items-center gap-3 cursor-pointer">
+										<input
+											type="radio"
+											name="payment"
+											value="GCash"
+											class="form-check-input order-radio m-0"
+										/>
+										<span
+											class="d-inline-flex align-items-center justify-content-center fw-bold text-primary"
+											style="width: 28px; font-size: 1.15rem"
+										>
+											G
+										</span>
+										<span class="font-serif fs-5 text-darkbrown">GCash</span>
+									</label>
+
+									<label class="d-flex align-items-center gap-3 cursor-pointer">
+										<input
+											type="radio"
+											name="payment"
+											value="Bank Transfer"
+											class="form-check-input order-radio m-0"
+										/>
+										<span
+											class="d-inline-flex align-items-center justify-content-center"
+											style="width: 28px"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="22"
+												height="22"
+												fill="#615341"
+												viewBox="0 0 16 16"
+											>
+												<path
+													d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"
+												/>
+											</svg>
+										</span>
+										<span class="font-serif fs-5 text-darkbrown"
+											>Bank Transfer</span
+										>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="text-center mt-5">
+						<button
+							type="submit"
+							class="btn btn-darkbrown text-white rounded-pill px-5 py-2 fs-5 font-serif d-inline-flex align-items-center justify-content-center gap-2"
+							style="min-width: 300px"
+						>
+							Place Order <span class="fs-6 opacity-75">&#10022;</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<footer id="footer" class="bg-darkbrown text-lightbrown py-5">
+			<div class="container" style="max-width: 960px">
+				<div class="row g-4">
+					<div class="col-12 col-md-6 d-flex gap-3 align-items-start">
+						<img
+							src="images/logo-footer.png"
+							alt="Thrift Treasures Logo"
+							class="flex-shrink-0"
+							style="width: 150px; height: 150px"
+						/>
+						<div style="max-width: 300px">
+							<p
+								class="text-uppercase fw-semibold small mb-1 text-white"
+								style="letter-spacing: 0.08em; font-size: 0.75rem"
+							>
+								Thrift Treasures
+							</p>
+							<p class="small mb-0 opacity-75">
+								Notes on new collections, material studies, and the objects that
+								inform our work.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-3">
+						<p
+							class="text-uppercase fw-semibold small mb-2 text-white"
+							style="letter-spacing: 0.08em; font-size: 0.75rem"
+						>
+							Information
+						</p>
+						<ul class="list-unstyled small mb-0">
+							<li class="mb-1">
+								<a
+									href="index.html#products"
+									class="text-decoration-none text-lightbrown opacity-75"
+									>Products</a
+								>
+							</li>
+							<li>
+								<a
+									href="index.html#about"
+									class="text-decoration-none text-lightbrown opacity-75"
+									>About Us</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-md-3">
+						<p
+							class="text-uppercase fw-semibold small mb-2 text-white"
+							style="letter-spacing: 0.08em; font-size: 0.75rem"
+						>
+							Support
+						</p>
+						<ul class="list-unstyled small mb-0">
+							<li class="mb-1">
+								<a
+									href="#"
+									class="text-decoration-none text-lightbrown opacity-75"
+									>Contact Us</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-decoration-none text-lightbrown opacity-75"
+									>Privacy and Terms</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			const orderForm = document.getElementById("orderForm");
+			const colorLabel = document.getElementById("selectedColorLabel");
+			const sizeLabel = document.getElementById("selectedSizeLabel");
+
+			document.querySelectorAll('input[name="color"]').forEach((input) => {
+				input.addEventListener("change", () => {
+					colorLabel.textContent = input.value;
+				});
+			});
+
+			document.querySelectorAll('input[name="size"]').forEach((input) => {
+				input.addEventListener("change", () => {
+					sizeLabel.textContent = input.value;
+				});
+			});
+
+			orderForm.addEventListener("submit", (e) => {
+				e.preventDefault();
+
+				const product = orderForm.dataset.product;
+				const collection = orderForm.dataset.collection;
+				const price = Number(orderForm.dataset.price);
+				const shipping = Number(orderForm.dataset.shipping);
+				const total = price + shipping;
+
+				const color = document.querySelector(
+					'input[name="color"]:checked',
+				).value;
+				const size = document.querySelector('input[name="size"]:checked').value;
+				const payment = document.querySelector(
+					'input[name="payment"]:checked',
+				).value;
+				const fullName = document.getElementById("fullName").value.trim();
+				const email = document.getElementById("emailAddress").value.trim();
+				const phone = document.getElementById("phoneNumber").value.trim();
+				const address = document.getElementById("deliveryAddress").value.trim();
+
+				const subject = `New Order: ${product} (${size}, ${color})`;
+				const body = [
+					"Hello Thrift Treasures,",
+					"",
+					"I would like to place an order with the following details:",
+					"",
+					"--- PRODUCT DETAILS ---",
+					`Item: ${product} (${collection})`,
+					`Color: ${color}`,
+					`Size: ${size}`,
+					`Subtotal: PHP ${price}`,
+					`Shipping Fee: PHP ${shipping}`,
+					`Total: PHP ${total}`,
+					"",
+					"--- SHIPPING INFORMATION ---",
+					`Full Name: ${fullName}`,
+					`Email Address: ${email}`,
+					`Phone Number: ${phone}`,
+					`Delivery Address: ${address}`,
+					`Payment Method: ${payment}`,
+					"",
+					"Thank you!",
+				].join("\n");
+
+				window.location.href = `mailto:orders@examplewebsite142.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+			});
+		</script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
