@@ -1,0 +1,264 @@
+
+:root {
+    --background: #DCD3C1;
+    --heading: #615341;
+    --text: #A98A6C;
+    --input-background: #FFFFFF;
+
+    --nav-brown: #5C4E3E;
+    --icon-brown: #756452;
+    --btn-hover: #463B2E;
+    --pastel-blue: #C5D4E8;
+
+    --heading-font: 'The Seasons', serif;
+    --body-font: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: var(--heading);
+}
+
+h2,
+p,
+input,
+textarea,
+button {
+    font-family: var(--body-font);
+    color: var(--heading);
+}
+
+.top-brand-bar {
+    background-color: var(--background);
+    height: 82px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-icon-btn {
+    color: var(--icon-brown);
+    background: transparent;
+    border: none;
+    padding: 0.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-icon-btn:hover,
+.header-icon-btn:focus {
+    color: var(--btn-hover);
+    outline: 2px solid var(--heading);
+    border-radius: 6px;
+}
+
+.brand-lockup {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand-hanger-img {
+    height: 155px;
+    width: auto;
+    display: block;
+}
+
+.cart-icon-img {
+    height: 68px;
+    width: auto;
+    display: block;
+}
+
+.main-navbar {
+    background-color: var(--nav-brown);
+    padding: 0.35rem 0;
+}
+
+.main-navbar .nav-link {
+    color: var(--background) !important;
+    font-weight: 400;
+    font-size: 0.98rem;
+    padding: 0.65rem 1.35rem;
+    letter-spacing: 0.2px;
+}
+
+.main-navbar .nav-link:hover,
+.main-navbar .nav-link:focus {
+    color: #FFFFFF !important;
+    text-decoration: underline;
+    outline: 2px solid var(--background);
+}
+.main-navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-navbar .nav-link {
+    padding: 12px 25px;
+}
+
+.Feedback-container {
+    max-width: 380px;
+    margin: 60px auto 0;
+    text-align: left;
+}
+
+.Feedback-container h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.Feedback-container h2 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+form {
+    max-width: 380px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.Feedback-input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--input-background);
+    border: 1px solid var(--heading);
+    border-radius: 5px;
+    padding: 10px;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.Feedback-input::placeholder {
+    font-style: italic;
+    color: var(--text);
+}
+
+textarea.Feedback-input {
+    height: 170px;
+    resize: none;
+}
+
+input.Feedback-input {
+    height: 30px;
+}
+
+.submit-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.submit-button img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.contact-container {
+    margin-top: -30px;
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.contact-information {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 390px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.contact-item img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.contact-item p {
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 8px;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+.site-footer {
+    background-color: var(--nav-brown);
+    color: var(--background);
+    margin-top: 4.5rem;
+    padding: 2.5rem 0;
+    overflow: hidden;
+}
+
+.footer-logo-img {
+    height: 310px;
+    width: auto;
+    margin: -115px -55px -115px -65px;
+}
+
+.footer-heading {
+    color: var(--pastel-blue);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.4px;
+    margin-bottom: 0.45rem;
+}
+
+.footer-text,
+.site-footer a {
+    color: var(--background);
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+input:focus,
+textarea:focus,
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--heading);
+    outline-offset: 2px;
+}
