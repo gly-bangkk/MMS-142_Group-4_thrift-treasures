@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --bg-cream: #DCD3C1;
+  --nav-brown: #5C4E3E;
+  --icon-brown: #756452;
+  --logo-brown: #7D644B;
+  --logo-blue: #7E92A8;
+  --btn-hover: #463B2E;
+  --pastel-blue: #C5D4E8;
+  --size-blue: #C6D3E3;
+  --text-brown: #5C4E3E;
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-brown);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, .brand-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 700;
+  color: var(--text-brown);
+}
+
+/* Header & Navigation */
+.top-brand-bar {
+  background-color: var(--bg-cream);
+  height: 82px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header-icon-btn {
+  color: var(--icon-brown);
+  background: transparent;
+  border: none;
+  padding: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icon-btn:hover,
+.header-icon-btn:focus {
+  color: var(--btn-hover);
+  outline: 2px solid var(--text-brown);
+  border-radius: 6px;
+}
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-hanger-img {
+  height: 155px;
+  width: auto;
+  display: block;
+}
+
+.cart-icon-img {
+  height: 68px;
+  width: auto;
+  display: block;
+}
+
+.main-navbar {
+  background-color: var(--nav-brown);
+  padding: 0.35rem 0;
+}
+
+.main-navbar .nav-link {
+  color: var(--bg-cream) !important;
+  font-weight: 400;
+  font-size: 0.98rem;
+  padding: 0.65rem 1.35rem;
+  letter-spacing: 0.2px;
+}
+
+.main-navbar .nav-link:hover,
+.main-navbar .nav-link:focus {
+  color: #FFFFFF !important;
+  text-decoration: underline;
+  outline: 2px solid var(--bg-cream);
+}
+
+/* Product Image Card */
+.product-image-box {
+  background-color: #FFFFFF;
+  border: 1px solid var(--text-brown);
+  border-radius: 12px;
+  padding: 1.75rem;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(43, 36, 29, 0.12);
+}
+
+/* Color Swatches */
+.color-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.swatch-circle {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid #EAE6DF;
+  box-shadow: 0 0 0 1px rgba(92, 78, 62, 0.35);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.swatch-label {
+  color: var(--text-brown);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  margin-top: 0.35rem;
+  display: block;
+}
+
+.color-option input[type="radio"]:checked + .swatch-circle,
+.color-option input[type="radio"]:focus + .swatch-circle {
+  box-shadow: 0 0 0 2.5px var(--text-brown);
+  transform: scale(1.06);
+}
+
+/* Size Buttons */
+.size-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.size-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 44px;
+  background-color: var(--size-blue);
+  color: var(--text-brown);
+  border: 1px solid #9EB0C7;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(43, 36, 29, 0.1);
+}
+
+.size-option input[type="radio"]:checked + .size-btn,
+.size-option input[type="radio"]:focus + .size-btn {
+  background-color: var(--nav-brown);
+  color: var(--bg-cream);
+  border-color: var(--nav-brown);
+  outline: 2px solid var(--text-brown);
+}
+
+/* Quantity Select */
+.quantity-select {
+  background-color: transparent;
+  color: var(--text-brown);
+  border: 1px solid var(--text-brown);
+  border-radius: 4px;
+  font-weight: 500;
+  min-width: 84px;
+  padding: 0.45rem 0.75rem;
+}
+
+.quantity-select:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: var(--text-brown);
+  box-shadow: 0 0 0 0.2rem rgba(92, 78, 62, 0.25);
+}
+
+/* Action Buttons with Mockup Shadows */
+.btn-order-now {
+  background-color: var(--nav-brown);
+  color: var(--bg-cream);
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.5px;
+  min-height: 46px;
+  border: 1px solid var(--nav-brown);
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(43, 36, 29, 0.28);
+}
+
+.btn-order-now:hover,
+.btn-order-now:focus {
+  background-color: var(--btn-hover);
+  color: #FFFFFF;
+  outline: 2px solid var(--text-brown);
+}
+
+.btn-add-bag {
+  background-color: transparent;
+  color: var(--text-brown);
+  border: 1px solid var(--text-brown);
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.5px;
+  min-height: 46px;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(43, 36, 29, 0.2);
+}
+
+.btn-add-bag:hover,
+.btn-add-bag:focus {
+  background-color: rgba(92, 78, 62, 0.1);
+  color: var(--text-brown);
+}
+
+/* Description & Product Details Card */
+.details-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--text-brown);
+  border-radius: 14px;
+  padding: 2.25rem 2.5rem;
+  color: var(--text-brown);
+  box-shadow: 0 3px 8px rgba(43, 36, 29, 0.12);
+}
+
+.details-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-brown);
+  margin-bottom: 0.65rem;
+}
+
+.details-list {
+  font-style: italic;
+  color: var(--text-brown);
+  padding-left: 1.25rem;
+}
+
+.details-list li {
+  margin-bottom: 0.2rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--nav-brown);
+  color: var(--bg-cream);
+  margin-top: 4.5rem;
+  padding: 2.5rem 0;
+  overflow: hidden;
+}
+
+.footer-logo-img {
+  height: 310px;
+  width: auto;
+  margin: -115px -55px -115px -65px;
+}
+
+.footer-heading {
+  color: var(--pastel-blue);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.4px;
+  margin-bottom: 0.45rem;
+}
+
+.footer-text,
+.site-footer a {
+  color: var(--bg-cream);
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
